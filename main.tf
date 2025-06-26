@@ -13,9 +13,11 @@ provider "tfe" {
 
 resource "tfe_workspace" "test" {
   name         = "tfe-provider-workspace-tag"
-  organization = tfe_organization.test-organization.name
-  tags         = {
-      environment = "dev"
-      team_owner = "daniela"
+  organization = "daniela-org"
+  tags = {
+    ITBA                     = "test ITBA"
+    correlationId            = "APM0015224"
+    owningTransactionCycleId = "14"
+    primaryOwner             = "firstname lastname"
   }
 }
