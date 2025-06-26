@@ -13,7 +13,7 @@ provider "tfe" {
 
 resource "tfe_organization" "test-organization" {
   name  = "daniela-org"
-  email = "admin@company.com"
+  email = "daniela@hashicorp.com"
 }
 
 resource "tfe_workspace" "test" {
