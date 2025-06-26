@@ -11,14 +11,9 @@ provider "tfe" {
   # Configuration options
 }
 
-resource "tfe_organization" "test-organization" {
-  name  = "daniela-org"
-  email = "daniela@hashicorp.com"
-}
-
 resource "tfe_workspace" "test" {
-  name         = "tfe-provider-workspace-tag"
-  organization = tfe_organization.test-organization.name
+  name         = "test-tfe-workspace-tag"
+  organization = "daniela-org"
   tags         = {
       environment = "dev"
       team_owner = "daniela"
