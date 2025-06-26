@@ -12,7 +12,7 @@ provider "tfe" {
 }
 
 resource "tfe_workspace" "test" {
-  name         = "test-tfe-workspace-tag"
+  name         = "test-tfe-workspace-tag-1"
   organization = "daniela-org"
   tags         = {
       environment = "dev"
