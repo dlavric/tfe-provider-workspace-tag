@@ -12,7 +12,7 @@ provider "tfe" {
 }
 
 resource "tfe_workspace" "test" {
-  name         = "tfe-provider-workspace-tag"
+  name         = "tfe-provider-workspace-tag-2"
   organization = "daniela-org"
   tags = {
     ITBA                     = "test ITBA"
